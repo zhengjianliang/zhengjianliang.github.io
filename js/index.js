@@ -25,7 +25,9 @@ var S = {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
       // 唯愿烟花像星辰，祝你所愿皆成真
-      S.UI.simulate('|#countdown 5||刘雪雪|祝你|生日|快乐|所愿|皆成真|');
+      S.UI.simulate('|#countdown 3||刘雪雪|祝你生日快乐|愿你天黑有灯|下雨有伞|愿你温柔不变|深情不伤|一生久安|岁月无优|生日快乐！！！');
+        //@未忘：愿此后的慌张 都是虚惊一场 愿你天黑有灯 下雨有伞 愿你温柔不变 深不伤 一生久安 岁月无优
+      //愿你温柔不变，情深不伤，一生久安，岁月无忧
     }
 
     S.Drawing.loop(function () {
