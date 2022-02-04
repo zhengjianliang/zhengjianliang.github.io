@@ -1,4 +1,16 @@
 
+/*
+
+  Shape Shifter
+  =============
+  A canvas experiment by Kenneth Cachia
+  http://www.kennethcachia.com
+
+  Updated code
+  ------------
+  https://github.com/kennethcachia/Shape-Shifter
+
+*/
 
 
 var S = {
@@ -12,9 +24,9 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-        //S.UI.simulate('|#countdown 3||祝|李|香|香|生|日|快|乐|');
-      S.UI.simulate('祝刘雪雪生日快乐');
-   }
+      // 唯愿烟花像星辰，祝你所愿皆成真
+      S.UI.simulate('|#countdown 5||刘雪雪|祝你|生日|快乐|所愿|皆成真|');
+    }
 
     S.Drawing.loop(function () {
       S.Shape.render();
@@ -195,7 +207,7 @@ S.UI = (function () {
         default:
           S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'What?' : current));
       }
-    }, 2000, sequence.length);
+    }, 3500, sequence.length);
   }
 
   function checkInputWidth(e) {
